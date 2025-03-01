@@ -19,7 +19,7 @@ zstyle ':omz:plugins:nvm' lazy yes
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster-custom"
 
-# since we have customized agnoster, we don't need prompt ending of <aws:username> that aws plugin generates 
+# since we have customized agnoster, we don't need prompt ending of <aws:username> that aws plugin generates
 SHOW_AWS_PROMPT=false 
 
 # Which plugins would you like to load?
@@ -77,11 +77,10 @@ export PATH=/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH
 alias python=python3
 
 # GO Path
-export GOROOT=$HOME/sdk/go1.22.5
-export GOPATH=$HOME/go/bin
-export GOBIN=$HOME/go/bin # where to install global tooling
-# go modules we want to promote to globally available
-export PATH=$GOROOT/bin:$GOPATH:$PATH
+export GOROOT=$HOME/sdk/go/go1.23.4
+export GOPATH=$HOME/go
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
